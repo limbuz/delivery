@@ -2,6 +2,8 @@
 
 namespace App\Http\Service\delivery\adapters;
 
+use App\Http\Service\delivery\utils\IDeliveryAdapter;
+
 final class FastDeliveryAdapter implements IDeliveryAdapter
 {
 	public function getData(array $data)

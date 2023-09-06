@@ -14,9 +14,6 @@ final class CalculationService
     public function __construct(array $data)
 	{
         $this->data = $data;
-
-		$validationService = new ValidationService($this->data);
-        $validationService->validate();
     }
 
     /**

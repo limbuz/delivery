@@ -8,6 +8,12 @@ use App\Http\Service\delivery\adapters\SlowDeliveryAdapter;
 final class SlowDelivery extends AbstractDelivery
 {
 	const TYPE = 'slow';
+	const REQUIRED_ARGUMENTS = [
+		'kladrFrom',
+		'kladrTo',
+		'weight',
+		'deliveryType',
+	];
 
 	public function setContext(): void
     {

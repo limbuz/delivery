@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Service\delivery\adapters;
+namespace App\Http\Service\delivery\utils;
 
 interface IDeliveryAdapter
 {

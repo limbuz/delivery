@@ -8,6 +8,12 @@ use App\Http\Service\delivery\adapters\FastDeliveryAdapter;
 final class FastDelivery extends AbstractDelivery
 {
 	const TYPE = 'fast';
+	const REQUIRED_ARGUMENTS = [
+		'kladrFrom',
+		'kladrTo',
+		'weight',
+		'deliveryType',
+	];
 
 	public function setContext(): void
     {

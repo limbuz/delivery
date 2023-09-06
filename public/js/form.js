@@ -4,7 +4,26 @@ class Form
     resultDate = document.getElementById('date');
     resultError = document.getElementById('error');
 
+    validate() {
+        const fields = [
+            document.getElementById('kladrFrom'),
+            document.getElementById('kladrTo'),
+            document.getElementById('weight'),
+            document.getElementById('deliveryType')
+        ]
+
+        fields.forEach((e) => {
+            if (e.value.length == 0) {
+                e.style.border = '1px solid red';
+            } else {
+                e.style.border = '1px solid black';
+            }
+        });
+    }
+
     run() {
+        this.validate();
+
         fetch('/calculate', {
             method: 'POST',
             headers: {

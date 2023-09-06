@@ -2,6 +2,8 @@
 
 namespace App\Http\Service\delivery\adapters;
 
+use App\Http\Service\delivery\utils\IDeliveryAdapter;
+
 final class SlowDeliveryAdapter implements IDeliveryAdapter
 {
 	const BASE_PRICE = 150;
